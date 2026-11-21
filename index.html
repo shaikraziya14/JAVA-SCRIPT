@@ -3,7 +3,105 @@
 
 <head>
     <title>index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #2f2445;
+            background:
+                radial-gradient(circle at 15% 20%, rgba(255, 182, 193, 0.55), transparent 24rem),
+                radial-gradient(circle at 85% 30%, rgba(162, 210, 255, 0.55), transparent 25rem),
+                linear-gradient(135deg, #fff8f0 0%, #f7efff 100%);
+        }
 
+        h1 {
+            margin: 42px 24px 24px;
+            text-align: center;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: transparent;
+            background: linear-gradient(90deg, #7251b5, #e66ba5, #7251b5);
+            background-clip: text;
+            -webkit-background-clip: text;
+            letter-spacing: 2px;
+            animation: fade-in 0.8s ease-out;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            width: fit-content;
+            max-width: calc(100% - 32px);
+            margin: 0 auto 40px;
+            padding: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.75);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.58);
+            box-shadow: 0 12px 30px rgba(114, 81, 181, 0.12);
+            backdrop-filter: blur(12px);
+        }
+
+        header a {
+            padding: 10px 16px;
+            border-radius: 999px;
+            color: #5c438c;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        header a:hover {
+            transform: translateY(-3px);
+            color: #ffffff;
+            background: linear-gradient(135deg, #7251b5, #e66ba5);
+            box-shadow: 0 8px 18px rgba(114, 81, 181, 0.28);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 22px 24px;
+            text-align: center;
+            color: #f7f2e8;
+            background: linear-gradient(135deg, #4d3477, #82559e);
+            border-top: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 -10px 30px rgba(77, 52, 119, 0.16);
+        }
+
+        footer p {
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(-12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                width: calc(100% - 48px);
+                border-radius: 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            h1 {
+                margin-top: 32px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -17,9 +115,7 @@
 </header>
 
     <footer>
-        <p>@ designed by raziya
-            
-        </p>
+        <p>&copy; 2026 Designed by Raziya</p>
     </footer>
 
 </body>
