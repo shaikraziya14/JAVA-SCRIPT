@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> sum2</title>
+
+    <script>
+        function addnumber() {
+            let firstnumber = Number(document.getElementById("firstnumber").value);
+            let secondnumber = Number(document.getElementById("secondnumber").value);
+            let thirdnumber = Number(document.getElementById("thirdnumber").value);
+            let fourthnumber = Number(document.getElementById("fourthnumber").value);
+            let fifthnumber = Number(document.getElementById("fifthnumber").value);
+            let sixthnumber = Number(document.getElementById("sixthnumber").value);
+            let answer = firstnumber + secondnumber + thirdnumber + fourthnumber + fifthnumber + sixthnumber;
+            alert(answer)
+
+        }
+    </script>
+    
+</head>
+
+<body>
+
+    <lable>first number</lable>
+    <input id="firstnumber"><br>
+    <lable>second number</lable>
+    <input id="secondnumber"><br>
+    <lable>third number</lable>
+    <input id="thirdnumber"><br>
+    <lable>fourth number</lable>
+    <input id="fourthnumber"><br>
+    <lable>fifth number</lable>
+    <input id="fifthnumber"><br>
+    <lable>sixth number</lable>
+    <input id="sixthnumber"><br>
+    <button onclick="addnumber()">add</button>
+
+</body>
+
+</html>
