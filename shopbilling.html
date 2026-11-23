@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+    <title>shop billing</title>
+    <script>
+        function caluculatebill() {
+            debugger
+            let shopratte = Number(document.getElementById("shoprate").value);
+            let customerrate = Number(document.getElementById("customer").value);
+            let result = customerrate - shopratte
+
+            if (customerrate > shopratte) {
+                alert(result + "," + "profit")
+            } else if (customerrate == shopratte) {
+                alert("no profit")
+            }
+            else {
+                alert(result + "," + "loss")
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <lable>shoporginalrate</lable>
+    <input id="shoprate"><br>
+    <lable>customerrate</lable>
+    <input id="customer"><br>
+    <button onclick="caluculatebill()"> calculatebill</button>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sum</title>
+    <script>
+        
+        function checkmark() {
+            debugger
+            let number = (document.getElementById("marks")).value;
+            if (number >= 90) {
+                alert("0")
+            } else if (number >= 80 && number <= 90)
+            {
+                alert("A+")
+            }else if (number >=70 && number <=80)
+            {
+                alert("A")
+            }
+            else if (number >=60 && number <=70)
+            {
+                alert("B")
+            }
+            else if (number >=50 && number <=60)
+            {
+                alert("C")
+            }
+            else if (number >=40 && number <=50)
+            {
+                alert("D")
+            }
+            else {
+                alert("F")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <lable>marks</lable>
+    <input id="marks"><br>
+    <button onclick="checkmark(checkmark)"> add</button>
+</body>
+
+</html>
